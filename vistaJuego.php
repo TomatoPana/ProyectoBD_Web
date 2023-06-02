@@ -63,26 +63,23 @@
             <br>
             <div class="rating">
                 <h2>¿Cómo calificaría este videojuego?</h2>
-                
-                <div class="container">
-                    <span id="rateMe3" class="rating-faces"></span>
+                <div>
+                    import React from 'react';
+                    import { MDBContainer, MDBRating } from 'mdbreact';
+
+                    const RatingPage = () => {
+                    return (
+                    <MDBContainer>
+                        <MDBRating iconRegular />
+                    </MDBContainer>
+                    );
+                    };
+
+                    export default RatingPage;
                 </div>
-
-                <!-- rating.js file -->
-                <script>
-                    // Rating Initialization
-                    $(document).ready(function() {
-                        $('#rateMe3').mdbRate();
-                    });
-                </script>
-
-                <div class="rating-star" data-star="5"></div>
-                <div class="rating-star" data-star="4"></div>
-                <div class="rating-star" data-star="3"></div>
-                <div class="rating-star" data-star="2"></div>
-                <div class="rating-star" data-star="1"></div>
-
             </div>
+            <br>
+            
             <input type="button" class="btn-danger" name="comprar" id="comprar" value="Comprar">
         </div>
     </div>
