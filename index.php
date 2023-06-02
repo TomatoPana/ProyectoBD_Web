@@ -87,4 +87,3 @@
   </div>
 
 </main>
-<?php require_once('./fragments/bootstrap.footer.php'); ?>
