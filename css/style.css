@@ -281,9 +281,44 @@ body {
     margin-right: 4px;
 }
 
-
  .stats{
     margin: auto;
     display: grid;
     place-items: center;
  }
+
+ .listado-filtros{
+    margin-top: 4em;
+ }
+
+ #filtros-container .list-group-item-action.active{
+    background-color: red;
+    border: #000000;
+ }
+
+ #filtros-container .list-group{
+    margin-bottom: 1em;
+ }
+
+ .listado-productos{
+    margin-top: 4em;
+ }
+
+@media (max-width: 768px){
+    .listado-productos{
+        margin-top: 2em;
+    }
+    .listado-productos .card-img-top{
+        width: 100%;
+    }
+}
+
+#paginator-container .page-item.active .page-link {
+    background-color: #C83A3A;
+    border-color: #C83A3A;
+    color: white;
+}
+
+#paginator-container .page-item:not(.active):not(.disabled) .page-link{
+    color: #C83A3A;
+}
