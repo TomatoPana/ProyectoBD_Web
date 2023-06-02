@@ -2,7 +2,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">GameFlix</a>
+    <a class="navbar-brand" href="#"><img src="/img/gameflix.jpg" height="30px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,25 +12,21 @@
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Buscar por categorías</a>
+          <a class="nav-link" href="#">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mis biblioteca</a>
+          <a class="nav-link" href="#">Catálogo</a>
         </li>
       </ul>
-      <span class="navbar-text">
+      <button type="button" class="btn btn-danger">
         Iniciar sesión
-      </span>
+      </button>
     </div>
   </div>
 </nav>
 
 <main class="py-56">
-  <div class="container">
-    <div class="row">
-      <h1 class="text-center">Tienda de Videojuegos Virtual GameFlix</h1>
-    </div>
-  </div>
+
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,14 +34,14 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/img/fff.webp" class="d-block w-100" alt="...">
+      <div class="carousel-item active" >
+        <img src="/img/genshinimpact.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/img/fff.webp" class="d-block w-100" alt="...">
+        <img src="/img/fallguys.jpg"  class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/img/fff.webp" class="d-block w-100" alt="...">
+        <img src="/img/overwatch.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
