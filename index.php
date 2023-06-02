@@ -18,9 +18,7 @@
           <a class="nav-link" href="#">Catálogo</a>
         </li>
       </ul>
-      <button type="button" class="btn btn-danger">
-        Iniciar sesión
-      </button>
+      <a href="/login.php" class="btn btn-danger">Iniciar Sesión</a>
     </div>
   </div>
 </nav>
