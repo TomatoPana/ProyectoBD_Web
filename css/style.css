@@ -286,6 +286,7 @@ body {
     display: grid;
     place-items: center;
  }
+<<<<<<< HEAD
 
  .listado-filtros{
     margin-top: 4em;
@@ -322,3 +323,17 @@ body {
 #paginator-container .page-item:not(.active):not(.disabled) .page-link{
     color: #C83A3A;
 }
+=======
+ .purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+
+.green-border-focus .form-control:focus {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+>>>>>>> e3ddd25aae456a5a2047b7827d98171d1257966c
