@@ -235,13 +235,48 @@ body {
     place-items: center;
 }
 
-.gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #fbc2eb;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
- }
+.pagina-juego{
+    width: 100%;
+    padding-top: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://th.bing.com/th/id/OIP.wOZUoxC6POew98eEh2cJZQHaEK?pid=ImgDet&rs=1);
+    width: 100%;
+    height: 300px;
+    filter: blur(2px);
+}
+
+.portada-juego{
+    float: left;
+    width: 38%;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.titulo-juego{
+    margin-top: 30px;
+}
+
+.info-juego{
+    float: left;
+    width: 58%;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rating-star {
+    background: url(/img/star.png);
+    width: 22px;
+    height: 26px;
+    margin-right: 4px;
+}

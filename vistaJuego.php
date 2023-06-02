@@ -39,7 +39,57 @@
             </div>
         </div>
     </nav>
-    
+
+
+    <div class="pagina-juego">
+        <div class="banner"></div>
+        <div class="main-container">
+            <div class="portada-juego">
+                <img src="https://th.bing.com/th/id/OIP.kIZGJpNxIo9s4WFCHALHRQHaHy?pid=ImgDet&rs=1" alt="" width="450">
+            </div>
+            <div class="titulo-juego">
+                <h2>OVERWATCH 2</h2>
+                <p>Precio: $000.00</p>
+            </div>
+            <div class="info-juego">
+                <h3>DESCRIPCION</h3>
+                <p>Overwatch 2 es un videojuego de disparos en primera persona. Fue desarrollado y publicado por Blizzard Entertainment.
+                    Es una secuela del hero shooter de 2016 Overwatch. El videojuego se diseñó para tener un entorno compartido para los modos
+                    de jugador contra jugador (JcJ) con el primer videojuego al tiempo que presenta modos cooperativos persistentes. Un cambio
+                    importante en el JcJ fue reducir el tamaño de los equipos de seis a cinco, lo que requirió que se reelaboraran varios
+                    personajes. El videojuego tuvo una beta cerrada en abril y mayo de 2022. El videojuego se lanzó como un título gratuito en
+                    acceso anticipado el 4 de octubre de 2022.</p>
+            </div>
+            <br>
+            <div class="rating">
+                <h2>¿Cómo calificaría este videojuego?</h2>
+                
+                <div class="container">
+                    <span id="rateMe3" class="rating-faces"></span>
+                </div>
+
+                <!-- rating.js file -->
+                <script>
+                    // Rating Initialization
+                    $(document).ready(function() {
+                        $('#rateMe3').mdbRate();
+                    });
+                </script>
+
+                <div class="rating-star" data-star="5"></div>
+                <div class="rating-star" data-star="4"></div>
+                <div class="rating-star" data-star="3"></div>
+                <div class="rating-star" data-star="2"></div>
+                <div class="rating-star" data-star="1"></div>
+
+            </div>
+            <input type="button" class="btn-danger" name="comprar" id="comprar" value="Comprar">
+        </div>
+    </div>
+
+
+
+
 </body>
 
 </html>
