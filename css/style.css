@@ -235,7 +235,6 @@ body {
     place-items: center;
 }
 
-<<<<<<< HEAD
 .pagina-juego{
     width: 100%;
     padding-top: 55px;
@@ -281,21 +280,10 @@ body {
     height: 26px;
     margin-right: 4px;
 }
-=======
-.gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #fbc2eb;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
- }
+
 
  .stats{
     margin: auto;
     display: grid;
     place-items: center;
  }
->>>>>>> 695cca7429707f86aaec97ec58e41472c01410d9
