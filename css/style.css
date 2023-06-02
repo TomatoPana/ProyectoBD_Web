@@ -212,3 +212,25 @@ body {
 .login-form form a:hover {
     text-decoration: underline;
 }
+
+.nosotros {
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.linea {
+    border-top: 2px solid #C83A3A;
+    height: 2px;
+    max-width: 80%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.us {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}

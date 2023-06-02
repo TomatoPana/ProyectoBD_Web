@@ -16,27 +16,27 @@
 
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/img/gameflix.jpg" height="30px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Catálogo</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/img/gameflix.jpg" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/nosotros.php">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<br><br><br>
+  </nav>
+  <br><br><br>
   <div class="container">
     <div class="row">
       <div class="col-5">
@@ -83,7 +83,7 @@
               </label>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-danger btn-lg btn-block" style="yellow">Registrarse</button>
+              <button type="submit" class="btn btn-danger btn-lg btn-block">Registrarse</button>
             </div>
           </form>
         </div>
