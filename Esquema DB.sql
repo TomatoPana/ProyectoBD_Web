@@ -273,9 +273,19 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`) VALUES (1, 'The Legend Of Zelda: Tears of the Kingdom', 1600, 'Everyone', NULL);
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`) VALUES (2, 'Team Fortess 2', 100, 'Teen', NULL);
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`) VALUES (3, 'Genshin Impact', 0, 'Everyone+10', 1);
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (1, 'Overwatch 2', 100, '+80%', NULL, 'overwatch.jpg');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (2, 'Halo Infinity', 900, '83%', NULL, 'Halo.ppg');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (3, 'Apex Legends', 89, '77%', 1, 'ApexLegends.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (4, 'Battlefield 1', 500, '78%', 1, 'Battlefield.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (5, 'minecraft', 700, '79%', NULL, 'Minecraft.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (6, 'Terraria', 115, '81%', NULL, 'Terraria.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (7, 'The forest', 400, '67%', NULL, 'Forest.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (8, 'ARK', 350, '63%', NULL, 'ARK.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (9, 'Little Nightmares', 200, '63%', NULL, 'ARK.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (10, 'ARK', 89, '63%', NULL, 'ARK.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (11, 'ARK', 89, '63%', NULL, 'ARK.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (12, 'ARK', 89, '63%', NULL, 'ARK.pgp');
+
 
 COMMIT;
 
@@ -309,12 +319,11 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (1, 'RPG', false);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (2, 'Gore', true);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'Slice of life', true);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (4, 'Aventura', false);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (5, 'Accion', false);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (6, 'Anime', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (1, 'carreras', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (2, 'shooter', true);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'survival', true);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (4, 'terror', false);
+
 
 COMMIT;
 
