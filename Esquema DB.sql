@@ -319,10 +319,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (1, 'carreras', false);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (2, 'shooter', true);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'survival', false);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (4, 'terror', true);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (1, 'shooter', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (2, 'survival', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'terror', terror);
 
 
 COMMIT;
@@ -383,9 +382,18 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mydb`;
-INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (1, 4);
-INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (2, 4);
-INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (3, 4);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (1, 1);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (2, 1);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (3, 1);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (4, 1);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (5, 2);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (6, 2);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (7, 2);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (8, 2);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (9, 3);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (10, 3);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (11, 3);
+INSERT INTO `mydb`.`games_has_categories` (`games_id`, `categories_id`) VALUES (12, 3);
 
 COMMIT;
 
