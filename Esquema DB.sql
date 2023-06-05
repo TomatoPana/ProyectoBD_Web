@@ -274,17 +274,17 @@ COMMIT;
 START TRANSACTION;
 USE `mydb`;
 INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (1, 'Overwatch 2', 100, '+80%', NULL, 'overwatch.jpg');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (2, 'Halo Infinity', 900, '83%', NULL, 'Halo.ppg');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (3, 'Apex Legends', 89, '77%', 1, 'ApexLegends.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (4, 'Battlefield 1', 500, '78%', 1, 'Battlefield.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (5, 'minecraft', 700, '79%', NULL, 'Minecraft.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (6, 'Terraria', 115, '81%', NULL, 'Terraria.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (7, 'The forest', 400, '67%', NULL, 'Forest.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (8, 'ARK', 350, '63%', NULL, 'ARK.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (9, 'Little Nightmares', 200, '63%', NULL, 'ARK.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (10, 'ARK', 89, '63%', NULL, 'ARK.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (11, 'ARK', 89, '63%', NULL, 'ARK.pgp');
-INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (12, 'ARK', 89, '63%', NULL, 'ARK.pgp');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (2, 'Halo Infinity', 900, '83%', NULL, 'Halo.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (3, 'Apex Legends', 89, '77%', 1, 'ApexLegends.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (4, 'Battlefield 1', 500, '78%', 1, 'Battlefield.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (5, 'minecraft', 700, '79%', NULL, 'Minecraft.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (6, 'Terraria', 115, '81%', NULL, 'Terraria.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (7, 'The forest', 400, '67%', NULL, 'Forest.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (8, 'ARK', 350, '63%', NULL, 'ARK.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (9, 'Little Nightmares', 250, '81%', NULL, 'littleNightmares.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (10, 'Dead by Daylight', 200, '73%', NULL, 'Deadbydaylight.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (11, 'Resident Evil 4', 1200, '91%', NULL, 'RE4.png');
+INSERT INTO `mydb`.`games` (`id`, `name`, `price`, `rating`, `discounts_id`, `image_url`) VALUES (12, 'Phasmophobia', 180, '69%', NULL, 'Phasmophobia.png');
 
 
 COMMIT;
@@ -321,8 +321,8 @@ START TRANSACTION;
 USE `mydb`;
 INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (1, 'carreras', false);
 INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (2, 'shooter', true);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'survival', true);
-INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (4, 'terror', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (3, 'survival', false);
+INSERT INTO `mydb`.`categories` (`id`, `name`, `isMatureContent`) VALUES (4, 'terror', true);
 
 
 COMMIT;
@@ -334,10 +334,46 @@ COMMIT;
 START TRANSACTION;
 USE `mydb`;
 INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 1);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 1);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 1);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 1);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 2);
 INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 2);
 INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 3);
 INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 3);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 3);
 INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 3);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 4);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 4);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 4);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 5);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 5);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 5);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 5);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 6);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 6);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 6);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 6);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 7);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 7);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 8);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 8);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 8);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 8);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 9);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 9);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 9);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 9);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (1, 10);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 10);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 10);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 10);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (2, 11);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (3, 11);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 11);
+INSERT INTO `mydb`.`consoles_has_games` (`consoles_id`, `games_id`) VALUES (4, 12);
+
+
 
 COMMIT;
 
