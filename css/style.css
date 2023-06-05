@@ -334,3 +334,12 @@ body {
     border: 1px solid #8bc34a;
     box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
 }
+
+
+.contenedor-lista{width: 100%;}
+.trash { color:rgb(209, 91, 71); }
+.panel-body { padding:0px; }
+.panel-footer .pagination { margin: 0; }
+.panel .glyphicon,.list-group-item .glyphicon { margin-right:5px; }
+.list-group-item:hover, a.list-group-item:focus {text-decoration: none;background-color: rgb(243, 79, 79);}
+.list-group { margin-bottom:0px; }
