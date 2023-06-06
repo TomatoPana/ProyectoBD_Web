@@ -74,7 +74,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`games` (
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_games_discounts1_idx` ON `mydb`.`games` (`discounts_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
 
@@ -120,10 +119,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`comments` (
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_comments_users1_idx` ON `mydb`.`comments` (`users_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_comments_games1_idx` ON `mydb`.`comments` (`games_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
 
@@ -165,10 +162,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`consoles_has_games` (
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_consoles_has_games_games1_idx` ON `mydb`.`consoles_has_games` (`games_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_consoles_has_games_consoles_idx` ON `mydb`.`consoles_has_games` (`consoles_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
 
@@ -195,10 +190,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`games_has_categories` (
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_games_has_categories_categories1_idx` ON `mydb`.`games_has_categories` (`categories_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_games_has_categories_games1_idx` ON `mydb`.`games_has_categories` (`games_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
 
@@ -232,13 +225,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`users_has_games` (
 ENGINE = InnoDB;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_users_has_games_games1_idx` ON `mydb`.`users_has_games` (`games_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
-CREATE INDEX `fk_users_has_games_users1_idx` ON `mydb`.`users_has_games` (`users_id` ASC) VISIBLE;
-
-SHOW WARNINGS;
-CREATE INDEX `fk_users_has_games_consoles1_idx` ON `mydb`.`users_has_games` (`consoles_id` ASC) VISIBLE;
 
 SHOW WARNINGS;
 
@@ -409,3 +397,38 @@ INSERT INTO `mydb`.`users_has_games` (`users_id`, `games_id`, `purchased_at`, `c
 
 COMMIT;
 
+-- -----------------------------------------------------
+-- TRIGGER
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+CREATE TABLE IF NOT EXISTS `mydb`.`log` (
+  `idLog` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL);
+  
+DELIMITER // 
+CREATE TRIGGER trigger_nuevo_juego
+AFTER INSERT ON `mydb`.`games`
+for each row
+BEGIN
+INSERT INTO mydb.log( idLog, name)
+   VALUES (idLog, "Se añadio un juego nuevo");
+   END //
+
+   DELIMITER // 
+CREATE TRIGGER trigger_edit_juego
+AFTER UPDATE ON `mydb`.`games`
+for each row
+BEGIN
+INSERT INTO mydb.log( idLog, name)
+   VALUES (idLog, "Se modifico un juego");
+   END //
+
+   DELIMITER // 
+CREATE TRIGGER trigger_elimino_juego
+AFTER DELETE ON `mydb`.`games`
+for each row
+BEGIN
+INSERT INTO mydb.log( idLog, name)
+   VALUES (idLog, "Se elimino un juego");
+   END //
