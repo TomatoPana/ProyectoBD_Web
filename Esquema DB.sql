@@ -408,7 +408,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`log` (
   
 DELIMITER // 
 CREATE TRIGGER trigger_nuevo_juego
-AFTER INSERT ON `mydb`.`games`
+AFTER INSERT ON `mydb`.`games`e
 for each row
 BEGIN
 INSERT INTO mydb.log( idLog, name)
