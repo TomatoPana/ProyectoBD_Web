@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ct{alogo</title>
+    <title>Catalogo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -99,7 +99,7 @@
                                     </div>
                                 </a>
                                 <a href="#" class="list-group-item list-group-item-action">
-                                <div class="form-check">
+                                    <div class="form-check">
                                         <label for="" class="form-check-label">
                                             <input type="checkbox" value="Terror" class="form-check-input">
                                             Terror
@@ -119,7 +119,10 @@
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
                                         <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <p class="card-text">$150.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +130,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 2</h4>
+                                        <p class="card-text">$100.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -136,8 +142,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 3</h4>
+                                        <p class="card-text">$300.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -145,8 +154,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 4</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -154,8 +166,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 5</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -163,8 +178,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 6</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -172,8 +190,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 7</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -181,8 +202,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 8</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -190,8 +214,11 @@
                                 <div class="card">
                                     <img src="https://th.bing.com/th/id/OIP.hJ1c37JAEFTr-zJ3kDXIqAHaGe?pid=ImgDet&rs=1" alt="Producto 1" class="card-img-top img-fluid">
                                     <div class="card-block">
-                                        <h4 class="card-title">Producto 1</h4>
-                                    <p class="card-text">$000.00</p>
+                                        <h4 class="card-title">Producto 9</h4>
+                                        <p class="card-text">$000.00</p>
+                                    </div>
+                                    <div>
+                                        <input type="button" value="añadir al carrito" onclick="alert('Report generation has started.');" />
                                     </div>
                                 </div>
                             </div>
@@ -201,9 +228,9 @@
                                 <nav>
                                     <ul class="pagination">
                                         <li class="page-item disabled">
-                                        <a href="#" class="page-link">
-                                            &laquo;
-                                        </a>
+                                            <a href="#" class="page-link">
+                                                &laquo;
+                                            </a>
                                         </li>
                                         <li class="page-item active">
                                             <a href="#" class="page-link">1</a>
